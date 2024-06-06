@@ -1,7 +1,7 @@
-package org.example.creational.singelton;
+package org.example.creational.singleton;
 
-import org.example.creational.singelton.realization.EagerSingleton;
-import org.example.creational.singelton.realization.LazySingleton;
+import org.example.creational.singleton.realization.EagerSingleton;
+import org.example.creational.singleton.realization.LazySingleton;
 
 public class Main {
     public static void main(String[] args) {

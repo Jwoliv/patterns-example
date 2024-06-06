@@ -1,4 +1,4 @@
-package org.example.creational.singelton.realization;
+package org.example.creational.singleton.realization;
 
 import lombok.Getter;
 import lombok.ToString;
