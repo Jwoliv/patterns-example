@@ -9,25 +9,26 @@ public class Main {
         DeployFactory awsDeploy = new AWSDeployFactory();
         DeployFactory azureDeploy = new AzureDeployFactory();
 
-        System.out.println("############## AWS ##############");
-        startDeploy(awsDeploy);
-        System.out.println("########### PROCESSING ##########");
-        stopDeploy(awsDeploy);
+        deploy(awsDeploy, "############## AWS ##############");
+        deploy(azureDeploy, "############# Azure #############");
+    }
 
+    public static void deploy(DeployFactory deployFactory, String title) {
+        System.out.println(title);
+        startDeploy(deployFactory);
+        System.out.println("########### PROCESSING ##########");
+        stopDeploy(deployFactory);
         System.out.println();
-
-        System.out.println("############# Azure #############");
-        startDeploy(azureDeploy);
-        System.out.println("########### PROCESSING ##########");
-        stopDeploy(azureDeploy);
     }
 
     public static void startDeploy(DeployFactory deployFactory) {
         deployFactory.getInstance().start();
         deployFactory.getStorage().getInfo();
+        deployFactory.getNetwork().healthCheck();
     }
 
     public static void stopDeploy(DeployFactory deployFactory) {
         deployFactory.getInstance().stop();
+        deployFactory.getNetwork().healthCheck();
     }
 }
