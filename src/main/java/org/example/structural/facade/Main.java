@@ -1,7 +1,7 @@
 package org.example.structural.facade;
 
-import org.example.structural.facade.realization.Client;
-import org.example.structural.facade.realization.ClientI;
+import org.example.structural.facade.realization.client.Client;
+import org.example.structural.facade.realization.client.ClientI;
 import org.example.structural.facade.realization.check.Check;
 
 public class Main {

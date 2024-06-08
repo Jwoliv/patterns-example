@@ -1,4 +1,4 @@
-package org.example.structural.facade.realization;
+package org.example.structural.facade.realization.client;
 
 import org.example.structural.facade.realization.check.Check;
 import org.example.structural.facade.realization.check.CheckFacade;
