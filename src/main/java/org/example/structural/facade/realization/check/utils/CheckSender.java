@@ -1,4 +1,6 @@
-package org.example.structural.facade.realization.check;
+package org.example.structural.facade.realization.check.utils;
+
+import org.example.structural.facade.realization.check.modal.Check;
 
 public class CheckSender {
     public String sendCheckToClient(Check check) {

@@ -2,7 +2,7 @@ package org.example.structural.facade;
 
 import org.example.structural.facade.realization.client.Client;
 import org.example.structural.facade.realization.client.ClientI;
-import org.example.structural.facade.realization.check.Check;
+import org.example.structural.facade.realization.check.modal.Check;
 
 public class Main {
     public static void main(String[] args) {

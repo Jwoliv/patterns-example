@@ -1,5 +1,9 @@
 package org.example.structural.facade.realization.check;
 
+import org.example.structural.facade.realization.check.modal.Check;
+import org.example.structural.facade.realization.check.utils.CheckSender;
+import org.example.structural.facade.realization.check.utils.CheckValidator;
+
 public class CheckFacade {
 
     CheckValidator checkValidator = new CheckValidator();
