@@ -7,7 +7,7 @@ public class Client implements ClientI {
     CheckFacade checkFacade = new CheckFacade();
 
     @Override
-    public void proceedCheck(Check check) {
-        checkFacade.proceedCheck(check);
+    public String proceedCheck(Check check) {
+        return checkFacade.proceedCheck(check);
     }
 }

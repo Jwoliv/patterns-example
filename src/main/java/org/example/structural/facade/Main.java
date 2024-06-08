@@ -7,6 +7,7 @@ import org.example.structural.facade.realization.check.Check;
 public class Main {
     public static void main(String[] args) {
         ClientI client = new Client();
-        client.proceedCheck(Check.builder().build());
+        String result = client.proceedCheck(Check.builder().build());
+        System.out.println(result);
     }
 }

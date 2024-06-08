@@ -5,9 +5,10 @@ public class CheckFacade {
     CheckValidator checkValidator = new CheckValidator();
     CheckSender checkSender = new CheckSender();
 
-    public void proceedCheck(Check check) {
+    public String  proceedCheck(Check check) {
         if (checkValidator.isValidCheck(check)) {
-            checkSender.sendCheckToClient(check);
+            return checkSender.sendCheckToClient(check);
         }
+        return "";
     }
 }
