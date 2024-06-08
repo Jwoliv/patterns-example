@@ -1,7 +1,7 @@
 package org.example.structural.proxy.realization;
 
 public class ProxyItem implements ItemI {
-    private ObjectItem objectItem = new ObjectItem();
+    private final ObjectItem objectItem = new ObjectItem();
 
     @Override
     public void invoke() {
