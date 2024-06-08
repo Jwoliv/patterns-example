@@ -6,9 +6,9 @@ public class CheckSender {
     public String sendCheckToClient(Check check) {
         return """
                id: [%d]
-               sum: [%f]
-               tip: [%f]
-               tax: [%f]
+               sum: [%.2f]
+               tip: [%.2f]
+               tax: [%.2f]
                """.formatted(check.getId(), check.getSum(), check.getTax(), check.getTip());
     }
 }
