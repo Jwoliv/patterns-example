@@ -15,4 +15,5 @@ public class TypesEmployeeIterator implements Iterator<TypesEmployee> {
     public TypesEmployee next() {
         return TypesEmployee.values()[counter.getAndIncrement()];
     }
+
 }
