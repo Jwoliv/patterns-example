@@ -17,7 +17,7 @@ public class StoreServiceImpl implements StoreService {
             store.setItems(new ArrayList<>());
         }
         store.getItems().add(text);
-        notifyAllAboutNewItem(text, store);
+        notifyAllAboutNewItem(text);
     }
 
     @Override
@@ -30,7 +30,7 @@ public class StoreServiceImpl implements StoreService {
         listeners.remove(listener);
     }
 
-    public void notifyAllAboutNewItem(String text, Store store) {
+    public void notifyAllAboutNewItem(String text) {
         Optional.of(listeners)
                 .orElse(Collections.emptyList())
                 .forEach(listener -> listener.notify(text));
